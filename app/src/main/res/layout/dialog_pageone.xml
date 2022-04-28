@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvHousePreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="I prefer"
+        android:textColor="@color/quantum_black_100" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupHousePreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/tvHousePreference">
+
+        <RadioButton
+            android:id="@+id/radioQuiet"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Man"/>
+
+        <RadioButton
+            android:id="@+id/radioSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Women"/>
+
+        <RadioButton
+            android:id="@+id/radioWeekCombo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="LGBT"/>
+
+        <RadioButton
+            android:id="@+id/radioWeekNoPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Any"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvWeekendPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupHousePreference"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Hobby"
+        android:textColor="@color/quantum_black_100" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupWeekend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/tvWeekendPreference">
+
+        <RadioButton
+            android:id="@+id/radioParty"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Drug"/>
+
+        <RadioButton
+            android:id="@+id/radioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Drink"/>
+
+        <RadioButton
+            android:id="@+id/radioWeekendQuiet"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Smoke"/>
+
+        <RadioButton
+            android:id="@+id/radioNotHome"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Party"/>
+
+    </RadioGroup>
+
+    <TextView
+    android:id="@+id/tvOvernightGuests"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_below="@+id/radioGroupWeekend"
+    android:text="Has a car"
+    android:textColor="@color/quantum_black_100" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGuests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/tvOvernightGuests">
+
+        <RadioButton
+            android:id="@+id/radioOccasionalGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Yes"/>
+
+        <RadioButton
+            android:id="@+id/radioNoGuests"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="No"/>
+
+        <RadioButton
+            android:id="@+id/radioGuestsNoPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Planning to buy"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/separator"
+        android:background="#7F000000"
+        android:layout_width = "match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radioGroupGuests"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/separator">
+
+        <CheckBox
+            android:id="@+id/checkVisibility"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:checked="true"
+            android:text="Done" />
+
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/checkVisibility"
+            app:srcCompat="@drawable/ic_baseline_info_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCleanliness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Recreation"
+        android:textColor="@color/quantum_black_100" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/tvCleanliness">
+
+        <RadioButton
+            android:id="@+id/radioAlwaysClean"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Sports"/>
+
+        <RadioButton
+            android:id="@+id/radioFairlyClean"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Music"/>
+
+        <RadioButton
+            android:id="@+id/radioMessy"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Traveling"/>
+
+        <RadioButton
+            android:id="@+id/radioCleanNoPref"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Fencing"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/radioGroupClean"
+        android:text="Ideal major"
+        android:textColor="@color/quantum_black_100" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTemperature"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RadioButton
+            android:id="@+id/radioCold"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Engineering" />
+
+        <RadioButton
+            android:id="@+id/radioFairlyCold"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Business" />
+
+        <RadioButton
+            android:id="@+id/radioFairlyWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="CompSci" />
+
+        <RadioButton
+            android:id="@+id/radioWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="No Preference" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/separator"
+        android:background="#7F000000"
+        android:layout_width = "match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radioGroupTemp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_marginStart="10dp">
+
+        <CheckBox
+            android:id="@+id/checkVisibility"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:checked="true"
+            android:text="Done"/>
+
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/checkVisibility"
+            app:srcCompat="@drawable/ic_baseline_info_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

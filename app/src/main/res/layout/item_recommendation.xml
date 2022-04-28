@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/posts_border"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Minh"
+        android:textColor="@color/quantum_grey900"/>
+
+    <TextView
+        android:id="@+id/tvCompatibilityScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="50% match"
+        android:textColor="@color/quantum_grey900"/>
+
+    <TextView
+        android:id="@+id/tvMajorYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/tvUserName"
+        android:layout_toRightOf="@+id/ivProfileImage"
+        tools:text="Computer Science, Class of 2022"
+        android:textColor="@color/quantum_grey900"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/ivProfileImage"
+        tools:text="This is my description!!"
+        android:textColor="@color/quantum_grey900"/>
+
+    <TextView
+        android:id="@+id/tvGenderIdentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/quantum_grey900"
+        android:textStyle="bold"
+        tools:text="I identify as: Male" />
+
+    <TextView
+        android:id="@+id/tvGenderPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGenderIdentity"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/quantum_grey900"
+        android:textStyle="bold"
+        tools:text="Gender preference: Female" />
+
+    <TextView
+        android:id="@+id/tvSmokingPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvGenderPreference"
+        tools:text="Smoking: No"
+        android:textColor="@color/quantum_grey900"/>
+
+</RelativeLayout>

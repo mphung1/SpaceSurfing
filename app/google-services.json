@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "343625905956",
+    "project_id": "spacesurfinghost",
+    "storage_bucket": "spacesurfinghost.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343625905956:android:756ec07b639f9ae9f2a5b1",
+        "android_client_info": {
+          "package_name": "com.example.SpaceSurfing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343625905956-gr4v30nc2q6cbmdh7ap19teuvebqhgus.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.SpaceSurfing",
+            "certificate_hash": "23c14f32d927421ec94da51b98dce9d9a16c2d2f"
+          }
+        },
+        {
+          "client_id": "343625905956-c5uuorun4efauls5f1ain2li7qhfge1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWbyYYL4UyEljAq8EHeO2YENmzXHs3y70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343625905956-c5uuorun4efauls5f1ain2li7qhfge1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

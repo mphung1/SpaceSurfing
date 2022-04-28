@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SpaceSurfing</string>
+    <string name="SpaceSurfing">SpaceSurfing</string>
+
+    <string-array name="majors">
+        <item>Undecided</item>
+        <item>Chemical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Computer Science</item>
+        <item>Business</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2025</item>
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>Recent (Default)</item>
+        <item>Popularity</item>
+        <item>Rent (High to Low)</item>
+        <item>Rent (Low to High)</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>pop</item>
+        <item>rock</item>
+        <item>alternative</item>
+        <item>rap</item>
+        <item>jazz</item>
+        <item>r&amp;b</item>
+        <item>hip-hop</item>
+        <item>classical</item>
+        <item>country</item>
+        <item>dance/edm</item>
+        <item>electronic</item>
+    </string-array>
+</resources>
